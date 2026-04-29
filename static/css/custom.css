@@ -1,0 +1,38 @@
+/* Custom styles to fix button hover behavior and other tweaks */
+
+/* Fix for the project-specific buttons in rawhtml blocks */
+.project-button {
+    transition: all 0.2s ease-in-out !important;
+}
+
+.project-button:hover {
+    transform: scale(1.05);
+    background-color: #313244 !important; /* secondaryBackgroundColor from hugo.yaml */
+    border-color: #cba6f7 !important; /* primaryColor from hugo.yaml */
+    color: #cba6f7 !important;
+}
+
+/* Global button enhancements (Resume, Read More, etc.) */
+.btn {
+    transition: all 0.25s ease-in-out !important;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary-background-color) !important;
+    border-color: var(--primary-color) !important;
+    opacity: 1 !important;
+}
+
+/* Fix for the theme's default link underline that breaks button-like links */
+#single .page-content a.project-button::after,
+.page-content a.project-button::after,
+#about a.project-button::after {
+    display: none !important;
+}
+
+/* General fix: if any <a> has a project-button class, it shouldn't have the theme's underline */
+a.project-button::after {
+    content: none !important;
+    display: none !important;
+}

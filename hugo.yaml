@@ -119,7 +119,6 @@ params:
         - "Python"
         - "SQL"
         - "Pandas / NumPy"
-        - "Statsmodels"
         - "scikit-learn"
         - "Supervised Learning"
         - "Feature Engineering"

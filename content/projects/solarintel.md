@@ -31,10 +31,10 @@ tags:
 
 {{< rawhtml >}}
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:2rem;">
-  <a href="https://github.com/mahir-m01/EMHIRES-NASA-SolarPrediction" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#e4e6eb;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
+  <a href="https://github.com/mahir-m01/EMHIRES-NASA-SolarPrediction" target="_blank" class="project-button" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#e4e6eb;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
     <i class="fab fa-github"></i> GitHub
   </a>
-  <a href="https://huggingface.co/spaces/priyanshutomar2024/SolarIntel" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#4fc3f7;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
+  <a href="https://huggingface.co/spaces/priyanshutomar2024/SolarIntel" target="_blank" class="project-button" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#4fc3f7;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
     <i class="fas fa-external-link-alt"></i> Live Demo
   </a>
 </div>

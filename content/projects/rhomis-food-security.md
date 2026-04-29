@@ -30,13 +30,13 @@ tags:
 
 {{< rawhtml >}}
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:2rem;">
-  <a href="https://github.com/mahir-m01/Section-C_G-7_RHoMIS-Analytics" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#e4e6eb;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
+  <a href="https://github.com/mahir-m01/Section-C_G-7_RHoMIS-Analytics" target="_blank" class="project-button" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#e4e6eb;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
     <i class="fab fa-github"></i> GitHub
   </a>
-  <a href="https://public.tableau.com/app/profile/rajdeep.sanyal/viz/RHoMISDASHBOARD/INCOMEPOSITION" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#4fc3f7;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
+  <a href="https://public.tableau.com/app/profile/rajdeep.sanyal/viz/RHoMISDASHBOARD/INCOMEPOSITION" target="_blank" class="project-button" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#4fc3f7;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
     <i class="fas fa-chart-bar"></i> Tableau Dashboard
   </a>
-  <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FWS38SA" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#e4e6eb;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
+  <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FWS38SA" target="_blank" class="project-button" style="display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;background:#21262d;color:#e4e6eb;text-decoration:none;font-size:0.875rem;border:1px solid #30363d;">
     <i class="fas fa-database"></i> Dataset
   </a>
 </div>
