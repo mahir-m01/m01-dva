@@ -2,7 +2,7 @@
 title: "Steam Games Market Analytics"
 date: 2026-02-28
 description: "Market structure analysis of ~7,000 Steam titles. KPI engineering, pricing dynamics, and an interactive Google Sheets dashboard."
-image: /images/projects/steam-banner.jpg
+image: /images/projects/steam-logo.png
 badges:
   - "Google Sheets"
   - "KPI Design"

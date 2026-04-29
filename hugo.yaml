@@ -197,7 +197,7 @@ params:
           Market structure analysis of **~7,000 Steam titles** to identify engagement drivers and pricing dynamics. Engineered KPIs including Weighted Sentiment Score, Discount Impact, and Popularity Tier segmentation.
 
           Key finding: Free-to-Play titles generate **5.7x higher average Peak CCU** than Paid. Built an interactive Google Sheets dashboard with 15+ pivot tables and dynamic slicers.
-        image: /images/projects/steam-banner.jpg
+        image: /images/projects/steam-logo.png
         featured:
           name: "Read More"
           link: /projects/steam-games-analytics/
