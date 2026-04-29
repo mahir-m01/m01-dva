@@ -33,6 +33,7 @@ params:
 
   theme:
     defaultTheme: "dark"
+    disableThemeToggle: true
 
   font:
     fontSize: 1rem
@@ -41,26 +42,26 @@ params:
     textAlign: left
 
   color:
-    textColor: "#e4e6eb"
-    secondaryTextColor: "#b0b3b8"
-    textLinkColor: "#4fc3f7"
-    backgroundColor: "#0d1117"
-    secondaryBackgroundColor: "#1c2128"
-    primaryColor: "#4fc3f7"
-    secondaryColor: "#161b22"
+    textColor: "#cdd6f4"
+    secondaryTextColor: "#a6adc8"
+    textLinkColor: "#cba6f7"
+    backgroundColor: "#1e1e2e"
+    secondaryBackgroundColor: "#313244"
+    primaryColor: "#cba6f7"
+    secondaryColor: "#181825"
 
     darkmode:
-      textColor: "#e4e6eb"
-      secondaryTextColor: "#b0b3b8"
-      textLinkColor: "#4fc3f7"
-      backgroundColor: "#0d1117"
-      secondaryBackgroundColor: "#1c2128"
-      primaryColor: "#4fc3f7"
-      secondaryColor: "#161b22"
+      textColor: "#cdd6f4"
+      secondaryTextColor: "#a6adc8"
+      textLinkColor: "#cba6f7"
+      backgroundColor: "#1e1e2e"
+      secondaryBackgroundColor: "#313244"
+      primaryColor: "#cba6f7"
+      secondaryColor: "#181825"
 
   navbar:
     align: ms-auto
-    brandName: "Mahir Abdullah"
+    brandName: "M01-DVA"
     disableSearch: true
     stickyNavBar:
       enable: true
@@ -88,8 +89,8 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://mahirm01.page/"
-      download: false
+      url: "/Mahir-Abdullah-DVA-Resume.pdf"
+      download: true
       newPage: true
     socialLinks:
       fontAwesomeIcons:
@@ -106,7 +107,7 @@ params:
     title: "About Me"
     image: "/images/me.jpg"
     content: |-
-      I'm a Computer Science & Artificial Intelligence student at **Newton School of Technology, Rishihood University** (CGPA 9.4 / 10.0), specialising in Data & Visual Analytics.
+      I'm a Computer Science & Artificial Intelligence student at **Newton School of Technology, Rishihood University**, specialising in Data & Visual Analytics.
 
       I build end-to-end analytical pipelines: from raw, multi-thousand-column survey datasets to published Tableau dashboards and deployed ML systems. My work spans agricultural food security analysis across 35 countries, Steam marketplace market-structure research, and solar energy forecasting with an agentic AI layer over 3.8 million rows of European grid data.
 

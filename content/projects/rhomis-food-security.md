@@ -117,6 +117,10 @@ Seven KPIs formed the backbone of the dashboard, each tied directly to a policy 
 
 ## Tableau Dashboard
 
+{{< rawhtml >}}
+<img src="/images/projects/rhomis-dashboard.png" alt="RHoMIS Tableau Dashboard — Risk Overview" style="width:100%;border-radius:8px;margin-bottom:1.5rem;border:1px solid #30363d;">
+{{< /rawhtml >}}
+
 The dashboard was published on Tableau Public with four interactive views:
 
 - **Risk Overview**: choropleth map, food shortage rate by country, median months of shortage

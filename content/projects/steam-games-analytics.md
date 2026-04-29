@@ -82,6 +82,10 @@ Analytical columns derived to support KPI calculation and segmentation:
 
 ## Dashboard
 
+{{< rawhtml >}}
+<img src="/images/projects/steam-dashboard.png" alt="Steam Games Dashboard" style="width:100%;border-radius:8px;margin-bottom:1.5rem;border:1px solid #30363d;">
+{{< /rawhtml >}}
+
 The final dashboard was built in Google Sheets with a dark theme styled after the Steam desktop interface. It includes:
 
 - KPI cards for engagement, satisfaction, market structure, and discovery metrics

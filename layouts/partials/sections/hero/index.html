@@ -1,0 +1,56 @@
+{{ if .Site.Params.hero.enable | default false }}
+{{- $hero := .Site.Language.Params.hero | default .Site.Params.hero -}}
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-12 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
+                <span class="subtitle">
+                    {{ $hero.intro }}
+                </span>
+                <h1>
+                    {{ $hero.title }}
+                </h1>
+                <h2>
+                    {{ $hero.subtitle }}
+                </h2>
+                <p class="hero-content">
+                    {{ $hero.content | markdownify }}
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        {{ if .Site.Params.hero.button.enable }}
+                        <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond .Site.Params.hero.button.download "download" "" }}
+                          {{ if .Site.Params.hero.button.newPage | default true }}
+                          target="_blank"
+                          {{ end }}>
+                            {{ $hero.button.name | default .Site.Params.hero.button.name }}
+                        </a>
+                        {{ end }}
+                    </div>
+                    <div class="col-auto px-0 h-100">
+                        {{- partial "sections/hero/social.html" . -}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ if .Site.Params.hero.bottomImage.enable | default true }}
+    <div class="hero-bottom-svg d-md-block d-lg-block d-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="201" height="201" viewBox="0 0 201 201">
+            <g id="Group_1168" data-name="Group 1168" transform="translate(-384 -1392)">
+                <rect width="12" height="2" rx="1" transform="translate(391 1392) rotate(90)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(391 1500) rotate(90)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(391 1446) rotate(90)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(445 1392) rotate(90)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(499 1392) rotate(90)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(553 1392) rotate(90)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(391 1399) rotate(-180)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(445 1399) rotate(-180)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(499 1399) rotate(-180)" fill="#45475a" />
+                <rect width="12" height="2" rx="1" transform="translate(553 1399) rotate(-180)" fill="#45475a" />
+            </g>
+        </svg>
+    </div>
+    {{ end }}
+</section>
+{{ end }}

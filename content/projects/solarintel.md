@@ -86,6 +86,12 @@ A 4-node LangGraph pipeline sits on top of the ML model and provides structured 
 
 ---
 
+## Application Preview
+
+{{< rawhtml >}}
+<img src="/images/projects/solarintel-dashboard.png" alt="SolarIntel Streamlit Dashboard" style="width:100%;border-radius:8px;margin-bottom:1.5rem;border:1px solid #30363d;">
+{{< /rawhtml >}}
+
 ## Web Application
 
 The Streamlit application provides:

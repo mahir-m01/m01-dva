@@ -1,0 +1,33 @@
+{{ if .Site.Params.about.enable | default false }}
+{{- $about := .Site.Language.Params.about | default .Site.Params.about -}}
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">{{ $about.title | default (i18n "about") }}</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            {{ if .Site.Params.about.image }}
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto rounded-circle" alt="{{ .Site.Params.title }} profile picture">
+                </div>
+            </div>
+            {{ end }}
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                {{ $about.content | markdownify }}
+
+                {{ if .Site.Params.about.skills.enable }}
+                {{ $about.skills.title | default .Site.Params.about.skills.title }}
+                {{- $colors := slice "#cba6f7" "#89b4fa" "#94e2d5" "#a6e3a1" "#f9e2af" "#fab387" "#89dceb" "#74c7ec" "#f5c2e7" "#b4befe" -}}
+                <div class="row g-2 mt-1">
+                    {{ range $i, $item := .Site.Params.about.skills.items }}
+                    {{- $color := index $colors (mod $i (len $colors)) -}}
+                    <div class="col-6 col-md-3">
+                        <span class="w-100 py-2 px-2 text-wrap d-inline-block text-center" style="font-size:0.8rem;border-radius:6px;background:rgba(49,50,68,0.7);border:1px solid {{ $color }}33;color:{{ $color }};">{{ $item | markdownify }}</span>
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

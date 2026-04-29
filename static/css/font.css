@@ -1,16 +1,81 @@
-/* Override: use Alata (hero font) site-wide */
-body {
-    font-family: "Alata", sans-serif !important;
+/* Overused Grotesk — self-hosted */
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("/fonts/OverusedGrotesk-Roman.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("/fonts/OverusedGrotesk-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("/fonts/OverusedGrotesk-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("/fonts/OverusedGrotesk-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("/fonts/OverusedGrotesk-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("/fonts/OverusedGrotesk-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("/fonts/OverusedGrotesk-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("/fonts/OverusedGrotesk-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 
-.secondary-font, #secondary-font {
-    font-family: "Alata", sans-serif;
+/* Catppuccin Mauve buttons — Read More + Hero Resume */
+#projects .float-end .btn,
+#hero a.btn:not(.social-icon) {
+    background-color: #cba6f7 !important;
+    border-color: #cba6f7 !important;
+    color: #1e1e2e !important;
+    font-weight: 600;
+}
+#projects .float-end .btn:hover,
+#hero a.btn:not(.social-icon):hover {
+    background-color: #b48ee4 !important;
+    border-color: #b48ee4 !important;
+    color: #1e1e2e !important;
+    opacity: 1 !important;
 }
 
-.primary-font, #primary-font {
-    font-family: "Alata", sans-serif;
-}
-
+/* Apply site-wide */
+body,
+.secondary-font, #secondary-font,
+.primary-font, #primary-font,
 .default-font, #default-font {
-    font-family: "Alata", sans-serif;
+    font-family: "Overused Grotesk", sans-serif !important;
 }
