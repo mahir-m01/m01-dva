@@ -1,0 +1,275 @@
+baseURL: "https://mahirm01.page/"
+locale: "en-us"
+title: "Mahir Abdullah | Data & Visual Analytics"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Mahir Abdullah"
+  description: "Data & Visual Analytics portfolio: end-to-end pipelines, Tableau dashboards, and statistical modelling."
+  favicon: "/fav.png"
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  color:
+    textColor: "#e4e6eb"
+    secondaryTextColor: "#b0b3b8"
+    textLinkColor: "#4fc3f7"
+    backgroundColor: "#0d1117"
+    secondaryBackgroundColor: "#1c2128"
+    primaryColor: "#4fc3f7"
+    secondaryColor: "#161b22"
+
+    darkmode:
+      textColor: "#e4e6eb"
+      secondaryTextColor: "#b0b3b8"
+      textLinkColor: "#4fc3f7"
+      backgroundColor: "#0d1117"
+      secondaryBackgroundColor: "#1c2128"
+      primaryColor: "#4fc3f7"
+      secondaryColor: "#161b22"
+
+  navbar:
+    align: ms-auto
+    brandName: "Mahir Abdullah"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: true
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Mahir Abdullah."
+    subtitle: "I turn raw data into decisions."
+    content: "Data & Visual Analytics student at Newton School of Technology building end-to-end pipelines, interactive Tableau dashboards, and statistical models that translate messy datasets into strategic insights."
+    image: /images/me.jpg
+    roundImage: true
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://mahirm01.page/"
+      download: false
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/mahir-m01
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/mahir-abdullah-a21633323/
+        - icon: fab fa-medium
+          url: https://medium.com/@mahir-m01
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.jpg"
+    content: |-
+      I'm a Computer Science & Artificial Intelligence student at **Newton School of Technology, Rishihood University** (CGPA 9.4 / 10.0), specialising in Data & Visual Analytics.
+
+      I build end-to-end analytical pipelines: from raw, multi-thousand-column survey datasets to published Tableau dashboards and deployed ML systems. My work spans agricultural food security analysis across 35 countries, Steam marketplace market-structure research, and solar energy forecasting with an agentic AI layer over 3.8 million rows of European grid data.
+
+      I care about making analysis reproducible, insights defensible, and dashboards genuinely useful to decision-makers.
+    skills:
+      enable: true
+      title: "Core toolkit:"
+      items:
+        - "Python"
+        - "SQL"
+        - "Pandas / NumPy"
+        - "Statsmodels"
+        - "scikit-learn"
+        - "Supervised Learning"
+        - "Feature Engineering"
+        - "Model Evaluation"
+        - "LangGraph"
+        - "LangChain"
+        - "RAG"
+        - "Agentic AI Pipelines"
+        - "Tableau (Public)"
+        - "Matplotlib / Seaborn / Plotly"
+        - "Google Sheets"
+        - "ETL Pipeline Design"
+        - "EDA / ETA"
+        - "Statistical Hypothesis Testing"
+        - "KPI Design & Dashboard Design"
+        - "Jupyter Notebooks"
+        - "Git / GitHub"
+        - "Hugging Face Spaces"
+
+  # Experience — disabled
+  experience:
+    enable: false
+
+  # Education
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "Bachelor of Technology: Computer Science & Artificial Intelligence"
+        school:
+          name: "Newton School of Technology, Rishihood University"
+          url: "https://www.rishihood.edu.in/"
+        date: "Aug 2024 - Present"
+        GPA: "9.4 / 10.0 (Sem 3)"
+        content: |-
+          Specialisation in **Data & Visual Analytics (DVA)**.
+
+          Coursework covers statistical modelling, data pipeline engineering, dashboard design, exploratory and explanatory analysis, and applied machine learning.
+
+  # Achievements — disabled
+  achievements:
+    enable: false
+
+  # Projects
+  projects:
+    enable: true
+    items:
+      - title: "RHoMIS Food Security Analytics"
+        content: |-
+          Analysis of **54,873 smallholder farm households** across 35 countries using the Harvard Dataverse RHoMIS dataset. Built a 5-stage ETL pipeline reducing 1,599 raw variables to 46 Tableau-ready features.
+
+          Applied logistic regression, Mann-Whitney U, chi-square, and k-means clustering to quantify food insecurity drivers. Published a 4-view interactive Tableau dashboard on Tableau Public.
+        image: /images/projects/rhomis-banner.jpg
+        featured:
+          name: "Read More"
+          link: /projects/rhomis-food-security/
+        badges:
+          - "Python"
+          - "Pandas"
+          - "Matplotlib"
+          - "Seaborn"
+          - "Tableau"
+          - "scikit-learn"
+          - "k-means"
+          - "ETL"
+          - "EDA"
+          - "Statistical Testing"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/mahir-m01/Section-C_G-7_RHoMIS-Analytics
+          - icon: fas fa-chart-bar
+            url: https://public.tableau.com/app/profile/rajdeep.sanyal/viz/RHoMISDASHBOARD/INCOMEPOSITION
+
+      - title: "Steam Games Market Analytics"
+        content: |-
+          Market structure analysis of **~7,000 Steam titles** to identify engagement drivers and pricing dynamics. Engineered KPIs including Weighted Sentiment Score, Discount Impact, and Popularity Tier segmentation.
+
+          Key finding: Free-to-Play titles generate **5.7x higher average Peak CCU** than Paid. Built an interactive Google Sheets dashboard with 15+ pivot tables and dynamic slicers.
+        image: /images/projects/steam-banner.jpg
+        featured:
+          name: "Read More"
+          link: /projects/steam-games-analytics/
+        badges:
+          - "Google Sheets"
+          - "KPI Design"
+          - "Pivot Tables"
+          - "EDA"
+          - "Dashboard Design"
+          - "Market Analysis"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/mahir-m01/SectionC_Group2_SteamGames
+
+      - title: "SolarIntel: Solar Energy Generation Prediction"
+        content: |-
+          End-to-end ML system forecasting hourly solar output across **29 European countries** using 3.8 million rows fused from EMHIRES and NASA POWER API data.
+
+          Random Forest achieves R² of 0.911. Built a 4-node LangGraph agentic pipeline with RAG for grid-management recommendations. Deployed on Hugging Face Spaces.
+        image: /images/projects/nasa-banner.jpg
+        featured:
+          name: "Read More"
+          link: /projects/solarintel/
+        badges:
+          - "Python"
+          - "scikit-learn"
+          - "Matplotlib"
+          - "Seaborn"
+          - "Plotly"
+          - "LangGraph"
+          - "LangChain"
+          - "RAG"
+          - "NASA POWER API"
+          - "EMHIRES"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/mahir-m01/EMHIRES-NASA-SolarPrediction
+          - icon: fas fa-external-link-alt
+            url: https://huggingface.co/spaces/priyanshutomar2024/SolarIntel
+
+  # Contact
+  contact:
+    enable: true
+    content: "Inbox is always open. Questions, collaborations, or just a hello."
+    btnName: "Email me"
+    btnLink: "mailto:mahirabdofficial@gmail.com"
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: https://github.com/mahir-m01
+      linkedin: https://www.linkedin.com/in/mahir-abdullah-a21633323/
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
